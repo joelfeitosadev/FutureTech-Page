@@ -21,9 +21,8 @@ Você pode ver a página em funcionamento [neste link](LINK_PARA_O_GITHUB_PAGES.
 Por ser um projeto estático, não há necessidade de instalação de dependências.
 
 1.  **Clone o repositório:**
-    ```bash
-    git clone [https://github.com/joelfeitosadev/FutureTech-Page.git](https://github.com/joelfeitosadev/FutureTech-Page.git)
-    ```
+
+    `git clone https://github.com/joelfeitosadev/FutureTech-Page.git`
 
 2.  **Abra o arquivo no navegador:**
     Navegue até a pasta do projeto e abra o arquivo `index.html` diretamente no seu navegador de preferência.
