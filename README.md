@@ -4,7 +4,7 @@ Este projeto é uma landing page estática para uma conferência de tecnologia f
 
 ## 🖥️ Demonstração
 
-Você pode ver a página em funcionamento [neste link](LINK_PARA_O_GITHUB_PAGES.com).
+Você pode ver a página em funcionamento [neste link](https://joelfeitosadev.github.io/FutureTech-Page).
 
 ## ✨ Funcionalidades
 
