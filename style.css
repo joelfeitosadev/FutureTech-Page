@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--color-ligth);
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-ligth: #e0e0e0;
+    --color-primary: #6c63ff;
+    --color-black: #2c2c2e;
+    --color-dark: #070707;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left, var(--color-dark), transparent), url(images/pexels-bertellifotografia-3321797.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    color: var(--color-ligth);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    height: 100%;
+    text-align: center;
+}
+
+.hero-content h1 {
+    line-height: 1.8;
+    font-size: 2rem;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+.speakers,
+.schedule {
+    text-align: center;
+}
+
+h2 {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.speakers-grid,
+.schedule-grid {
+    display: grid;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.speaker-card {
+    align-items: center;
+    justify-content: center;
+}
+
+.speaker-card img {
+    border-radius: 50%;
+}
+
+.speaker-card,
+.schedule-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--color-white);
+    text-align: left;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.newsletter-grid {
+    display: grid;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.newsletter-image {
+    padding: 0 2rem;
+}
+
+.newsletter-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-text {
+    text-align: center;
+}
+
+.newsletter-text p {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.8rem;
+}
+
+.newsletter-form {
+   display: grid; 
+   flex-direction: column;
+   align-items: center;
+   justify-items: center;
+   gap: 1.5rem;
+   padding: 1.5rem 0;
+   text-align: center;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group input {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: .75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.btn:hover {
+    filter: brightness(0.7);
+}
+
+@media screen and (min-width: 769px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+         padding: 4rem;
+    }
+
+    .speakers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .speakers-grid,
+    .schedule-grid {
+        padding: 0 6rem;
+    }
+
+    .newsletter-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 6rem 6rem 3rem;
+        gap: 2rem;
+    }
+
+    .newsletter-form {
+        justify-items: left;
+    }
+
+    .newsletter-text {
+        text-align: left;
+    }
+
+    .newsletter-text h2 {
+        padding: 1rem 0;
+    }
+
+    .form-group {
+        text-align: left;
+        width: 85%;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-black);
+    color: var(--color-white);
+  }
+
+  .speaker-card,
+  .schedule-item,
+  .form-group input {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+  }
+
+  .newsletter-text p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
